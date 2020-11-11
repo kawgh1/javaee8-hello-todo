@@ -1,0 +1,18 @@
+
+// run this to run payara micro server (which the payara jar must be in the IdeaProjects folder, downloaded from payara micro server 5 online)
+// persists basic entity Manager in memory - no MySQL database set up, but also data is not persisted
+java -jar payara-micro.jar --deploy C:\Users\{user}\IdeaProjects\hello-todo\target\hello-todo.war
+
+// Create UberJar --> package our project into a single .jar file that can be called or executed anywhere
+
+C:\Users\{user}\IdeaProjects>java -jar payara-micro.jar --deploy C:\Users\{user}\IdeaProjects\hello-todo\target\hello-todo.war --port 8088 --outputUberJar helloTodo.jar
+Nov 11, 2020 5:36:21 AM fish.payara.micro.impl.UberJarCreator buildUberJar
+INFO: Building Uber Jar... helloTodo.jar
+Nov 11, 2020 5:36:21 AM fish.payara.micro.impl.UberJarCreator buildUberJar
+INFO: Built Uber Jar C:\Users\{user}\IdeaProjects\helloTodo.jar in 756 (ms)
+
+// now can run "java -jar helloTodo.jar" to run application on localhost:8088/hello-todo/api/v1/new
+// localhost:8088/hello-todo/api/v1/list
+// localhost:8088/hello-todo/api/v1/update
+// etc. various defined endpoints
+// this runs a Java EE8 UberJar
