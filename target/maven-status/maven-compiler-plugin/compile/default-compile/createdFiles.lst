@@ -1,4 +1,0 @@
-com\kwgdev\entity\Todo.class
-com\kwgdev\service\TodoService.class
-com\kwgdev\rest\TodoConfig.class
-com\kwgdev\rest\TodoRest.class

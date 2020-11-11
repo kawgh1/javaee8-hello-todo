@@ -10,28 +10,35 @@ but this is Java EE 8."
 use "mvn package payara-micro:start"
 
 Got it running but seems logs seem sketchy, definitely not stable
+
 [2020-11-11T07:19:51.521-0600] [] [INFO] [] [PayaraMicro] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1605100791521] [levelValue: 800]
 Payara Micro URLs:
+
 http://192.168.1.122:8080/
+
 http://192.168.1.122:8080/hello-todo
 
-'ROOT' REST Endpoints:
-GET     /api/v1/application.wadl
-GET     /api/v1/todo/list
-POST    /api/v1/todo/new
-POST    /api/v1/todo/status
-PUT     /api/v1/todo/update
-GET     /api/v1/todo/{id}
-GET     /openapi/
-GET     /openapi/application.wadl
+
+
+
+
 
 'hello-todo' REST Endpoints:
+
 GET     /hello-todo/api/v1/application.wadl
+
 GET     /hello-todo/api/v1/todo/list
+
 POST    /hello-todo/api/v1/todo/new
+
 POST    /hello-todo/api/v1/todo/status
+
 PUT     /hello-todo/api/v1/todo/update
+
 GET     /hello-todo/api/v1/todo/{id}
+
+
+
 
 
 
